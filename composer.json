@@ -1,0 +1,33 @@
+{
+  "name": "listeroabsoluto/shared-kernel-symfony-bridge",
+  "type": "library",
+  "config": {
+    "sort-packages": true,
+    "platform": {
+      "php": "8.1.9"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/listeroabsoluto/shared-kernel.git"
+    }
+  ],
+  "require": {
+    "php": "^8.1.0",
+    "doctrine/orm": "^2.5.11",
+    "listeroabsoluto/shared-kernel": "*",
+    "symfony/doctrine-bridge": "^6.2",
+    "symfony/messenger": "6.*",
+    "symfony/uid": "6.*"
+  },
+  "require-dev": {
+    "brianium/paratest": "^6.9",
+    "phpunit/phpunit": "^9"
+  },
+  "autoload": {
+    "psr-4": {
+      "SharedKernelSymfonyBridge\\": "src/SharedKernelSymfonyBridge/"
+    }
+  }
+}
