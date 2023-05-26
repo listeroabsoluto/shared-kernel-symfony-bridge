@@ -11,29 +11,21 @@ use Symfony\Component\Uid\Uuid;
 class Identifier extends Uuid
 {
     /**
-     * @return Identifier
+     * @return static
      * @throws \Exception
      */
-    public static function generate(): Identifier
+    public static function generate(): static
     {
         return new static(Uuid::v7());
     }
 
     /**
      * @param string $uuid
-     * @return Identifier
+     * @return static
      */
-    public static function fromUuid(string $uuid): Identifier
+    public static function fromUuid(string $uuid): static
     {
         return new static(Uuid::fromString($uuid));
-    }
-
-    /**
-     * @return Uuid
-     */
-    public function getValue(): Uuid
-    {
-        return $this;
     }
 
     /**
@@ -41,6 +33,6 @@ class Identifier extends Uuid
      */
     public function __toString(): string
     {
-        return $this->getValue()->toRfc4122();
+        return $this->toRfc4122();
     }
 }

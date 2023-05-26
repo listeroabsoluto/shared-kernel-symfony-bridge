@@ -34,7 +34,7 @@ class IdentifierTest extends TestCase
         $expected = "55180d98-fd63-4128-add8-0f5c8e429751";
         $actual = Identifier::fromUuid($expected);
 
-        static::assertEquals($expected, $actual->getValue());
+        static::assertEquals($expected, $actual);
     }
 
     public function testToString()
