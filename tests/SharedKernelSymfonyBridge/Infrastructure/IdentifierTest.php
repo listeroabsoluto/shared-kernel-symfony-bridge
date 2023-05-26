@@ -44,4 +44,11 @@ class IdentifierTest extends TestCase
 
         static::assertEquals($expected, (string)$actual);
     }
+
+    public function testGenerate()
+    {
+        $actual = Identifier::generate();
+
+        static::assertInstanceOf(Identifier::class, $actual);
+    }
 }
