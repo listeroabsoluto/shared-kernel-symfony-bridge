@@ -17,12 +17,13 @@
     "php": "^8.2.0",
     "doctrine/orm": "^2.5.11",
     "listeroabsoluto/shared-kernel": "*",
-    "symfony/doctrine-bridge": "^7.0",
-    "symfony/messenger": "7.*",
-    "symfony/uid": "7.*",
     "mark-gerarts/auto-mapper-plus": "1.*",
+    "symfony/dependency-injection": "^7.0",
+    "symfony/doctrine-bridge": "^7.0",
+    "symfony/http-foundation": "7.*",
+    "symfony/messenger": "7.*",
     "symfony/serializer": "7.*",
-    "symfony/http-foundation": "7.*"
+    "symfony/uid": "7.*"
   },
   "require-dev": {
     "brianium/paratest": "^6.9",
